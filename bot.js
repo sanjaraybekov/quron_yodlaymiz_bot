@@ -7,6 +7,6 @@ bot.start((ctx)=>ctx.reply("Hi! Welcome!"));
 
 bot.help((ctx)=>ctx.reply("What?"));
 
-bot.settings((ctx)=>ctx.reply("You entered settings."));
+bot.settings((ctx)=>ctx.reply("You entered settings. Bro!"));
 
 bot.launch();
