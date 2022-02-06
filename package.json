@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node bot.js",
+    "dev":"nodemon bot.js"
+  },
+  "dependencies": {
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
