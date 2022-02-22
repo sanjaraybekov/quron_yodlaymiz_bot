@@ -1,76 +1,136 @@
 const { Telegraf } = require("telegraf");
+const Markup = require("telegraf/markup");
+const fs = require("fs");
+const { title } = require("process");
 
 const bot = new Telegraf("5259679287:AAELWsIupsDZOOP7XVDeCpidEDUO0NhGvcc");
 
-bot.help((ctx) => ctx.reply("What?"));
-
-bot.settings((ctx) => ctx.reply("You entered settings. Bro!"));
-
-bot.start((ctx, next) => {
-  ctx.reply("Hello " + ctx.from.first_name + "!");
-  next(ctx);
-});
-
-bot.hears("Hello", (ctx) => {
+bot.start((ctx) => {
   ctx.reply(
-    "What's up! Send me sticker or some text or you can send me audio too!"
+    "Menu",
+    Markup.keyboard(["Suralar", "Sozlamalar", "Yordam"])
+      .oneTime()
+      .resize()
+      .extra()
   );
 });
-
-bot.on("sticker", (ctx) => {
-  ctx.reply("Oh, thanks! Type me your username, then i return your nike name");
-});
-
-bot.on("text", (ctx, next) => {
-  ctx.state.myBirthday = "May 7";
-  ctx.state.first_name = ctx.from.first_name;
-  ctx.reply("Thanks for your typing!");
-  next(ctx);
-});
-
-bot.on("audio", (ctx) => {
-  ctx.reply("Thanks for your audio :)");
-});
-
-bot.mention("@sanjaraybekov", (ctx) => {
-  ctx.reply(
-    `Thanks! Your nike name is ${ctx.from.first_name}. Enter your phone number please like this (93)847-83-77`
-  );
-});
-
-bot.phone("(93)847-83-77", (ctx) => {
-  ctx.reply('Thanks! Type "hash" with hashtag :)');
-});
-bot.hashtag("#hash", (ctx) => {
-  ctx.reply("Thanks you are so cute!");
-});
-
-bot.use((ctx,next) => {
-  ctx.telegram.sendMessage(
-    ctx.from.id,
-    "Hi! I'm a bot and your birthday is " + ctx.state.myBirthday
-  );
-  next(ctx);
-});
-
-bot.command("start", (ctx) => {
-  bot.telegram.sendMessage(
-    ctx.from.id,
-    "Hi! I'm a bot and your nike name is " + ctx.state.first_name,
-    {
-      parse_mode: "Markdown",
-      disable_notification: true,
+bot.on("text", (ctx) => {
+  if (ctx.message.text === "Suralar") {
+    ctx.reply(
+      "Suralar bo'limi.",
+      Markup.keyboard(["Falaq", "Nas"]).oneTime().resize().extra()
+    );
+  } else {
+    let fileSuralar = fs.readFileSync("suralar.json", "utf-8");
+    let suralar = JSON.parse(fileSuralar);
+    let sura = suralar.find((item) => item.title === ctx.message.text);
+    if (sura) {
+      ctx.reply(`${sura.title} surasi \n ${sura.content}`);
+    } else {
+      ctx.reply("Kechirasiz bizda bunday nomli sura mavjud emas.");
     }
-  );
-
-  ctx.reply(
-    ctx.from.id,
-    "Hi! I'm a bot and your nike name is " + ctx.state.first_name,
-    {
-      parse_mode: "Markdown",
-      disable_notification: true,
-    }
-  );
+  }
 });
+
+// function sura(name) {}
+
+// const axios = require("axios");
+
+// const helpMessage = `
+// /fortune - get a fortune cookie;
+// /cat - get a random cat picture;
+// /cat <text> - get a random cat pic with your text and nicename;
+
+// /dogbreeds - get a dogbreeds list;
+
+// /dog <text from dogbreeds list> - get a dog pic and text of dogbreeds list text;
+// `;
+// startCommand = `
+// /help - get what will do bot for you.
+// `;
+
+// bot.start((ctx) => {
+//   ctx.reply(`Hi ${ctx.from.first_name} \n${startCommand}`);
+// });
+// bot.help((ctx) => {
+//   ctx.reply(helpMessage);
+// });
+
+// bot.command("fortune", (ctx) => {
+//   axios
+//     .get("http://yerkee.com/api/fortune")
+//     .then((res) => {
+//       ctx.reply(res.data.fortune);
+//     })
+//     .catch((e) => {
+//       console.log(e);
+//     });
+// });
+// bot.command("cat", (ctx) => {
+//   input = ctx.message.text;
+
+//   inputArray = input.split(" ");
+//   if (inputArray.length == 1) {
+//     try {
+//       axios.get("https://aws.random.cat/meow").then((res) => {
+//         ctx.replyWithPhoto(res.data.file);
+//       });
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   } else {
+//     inputArray.shift();
+//     input = inputArray.join(" ");
+//     ctx.replyWithPhoto(
+//       `https://cataas.com/cat/says/${input} ${ctx.from.first_name}`
+//     );
+//   }
+// });
+// bot.command("dogbreeds", (ctx) => {
+//   let rawData = fs.readFileSync("./dogbreeds.json", "utf-8");
+//   let data = JSON.parse(rawData);
+//   let message = "Dog Breed";
+//   data.forEach((item) => {
+//     message += `-${item}\n`;
+//   });
+//   ctx.reply(message);
+// });
+
+// bot.command("dog", (ctx) => {
+//   let input = ctx.message.text.split(" ");
+//   if (input.length != 2) {
+//     ctx.reply("YOU must give a dog breed as second argument!");
+//     return;
+//   }
+//   let breedInput = input[1];
+//   let rawData = fs.readFileSync("./dogbreeds.json", "utf-8");
+//   let data = JSON.parse(rawData);
+
+//   if (data.includes(breedInput)) {
+//     axios
+//       .get(`https://dog.ceo/api/breed/${breedInput}/images/random`)
+//       .then((res) => {
+//         ctx.replyWithPhoto(res.data.message);
+//         ctx.reply(`I'm ${breedInput.toUpperCase()}!`);
+//       })
+//       .catch((e) => {
+//         console.log(e);
+//       });
+//   } else {
+//     let suggestions = data.filter((item) => {
+//       return item.startsWith(breedInput);
+//     });
+//     let message = "Did you mean: \n";
+
+//     suggestions.forEach((item) => {
+//       return (message += `-${item}\n`);
+//     });
+//     if (suggestions.length == 0) {
+//       ctx.reply("Empty question!");
+//     } else {
+//       ctx.reply(message);
+//     }
+//   }
+// });
 
 bot.launch();

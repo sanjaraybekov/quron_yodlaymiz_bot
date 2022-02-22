@@ -1,9 +1,11 @@
 {
   "scripts": {
     "start": "node bot.js",
-    "dev":"nodemon bot.js"
+    "dev": "nodemon bot.js"
   },
   "dependencies": {
+    "axios": "^0.26.0",
+    "fs": "^0.0.1-security",
     "telegraf": "^3.38.0"
   },
   "devDependencies": {
