@@ -1,9 +1,9 @@
 const { Telegraf } = require("telegraf");
 const Markup = require("telegraf/markup");
 const fs = require("fs");
-const { title } = require("process");
 
-const bot = new Telegraf("5259679287:AAELWsIupsDZOOP7XVDeCpidEDUO0NhGvcc");
+
+const bot = new Telegraf("5150821600:AAGCWvc2DYp86q9idOSSh2t7P651EoAWMvg");
 
 bot.start((ctx) => {
   ctx.reply(
