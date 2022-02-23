@@ -1,13 +1,25 @@
 const { Telegraf } = require("telegraf");
-const Markup = require("telegraf/markup");
 const fs = require("fs");
 
 const bot = new Telegraf("5150821600:AAGCWvc2DYp86q9idOSSh2t7P651EoAWMvg");
 
-// bot.action("Bosh sahifa", (ctx) => {
-//   return ctx.editMessageText();
-// });
-
+const sendMain = (ctx) => {
+  bot.telegram.sendMessage(
+    ctx.chat.id,
+    `Assalomu Aleykum ${ctx.from.first_name}`,
+    {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: "Suralar", callback_data: "Suralar" },
+            { text: "Yordam", callback_data: "Yordam" },
+            { text: "Sozlamalar", callback_data: "Sozlamalar" },
+          ],
+        ],
+      },
+    }
+  );
+};
 const getButtons = () => {
   var suralar = parsing();
   return suralar.map((s) => {
@@ -16,21 +28,7 @@ const getButtons = () => {
 };
 bot
   .start((ctx) => {
-    bot.telegram.sendMessage(
-      ctx.chat.id,
-      `Assalomu Aleykum ${ctx.from.first_name}`,
-      {
-        reply_markup: {
-          inline_keyboard: [
-            [
-              { text: "Suralar", callback_data: "Suralar" },
-              { text: "Yordam", callback_data: "Yordam" },
-              { text: "Sozlamalar", callback_data: "Sozlamalar" },
-            ],
-          ],
-        },
-      }
-    );
+    sendMain(ctx);
   })
   .action("Suralar", (ctx) => {
     if (ctx.match === "Suralar") {
@@ -43,6 +41,9 @@ bot
         },
       });
     }
+  })
+  .action("Bosh sahifa", (ctx) => {
+    return sendMain(ctx);
   })
   .action(/^sura_(\d)/, (ctx) => {
     const suraId = ctx.match[1];

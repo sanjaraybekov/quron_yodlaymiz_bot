@@ -1,12 +1,53 @@
 [
   {
     "id": "1",
-    "title": "Falaq",
-    "content": "Бисмил-ляяхи ррахмаани ррахиим.\nКъуль а‘узу би раббиль-фаляк.\nМин шарри маа хъаляк.\nВа мин шарри гъасикын изаа вакъаб.\nВа мин шарри ннаффаасаати филь-‘укад.\nВа мин шарри хаасидин изаа хасад."
+    "title": "Al-Falaq",
+    "content": "Bismillah hir rahman nir raheem\nQul a’oozu bi rabbil-falaq\nMin sharri maa khalaq\nWa min sharri ghaasiqin izaa waqab\nWa min sharrin-naffaa-saati fil ‘uqad\nWa min sharri haasidin izaa hasad"
   },
   {
     "id": "2",
-    "title": "Nas",
-    "content": "Бисмил-ляяхи ррахмаани ррахиим.\nКуль а‘узу би рабби н-наас.\nМаликин-наас.\nИляяхи н-наас.\nМин шарриль-васваасиль-ханнаас.\nАллязи йувасвису фии судуурин-наас.\nМиналь-джиннати ван-нас."
+    "title": "An-Nas",
+    "content": "Bismillah hir rahman nir raheem\nQul a’oozu birabbin naas\nMalikin naas\nIlaahin naas\nMin sharril waswaasil khannaas\nAllazee yuwaswisu fee sudoorin naas\nMinal jinnati wannaas"
+  },
+  {
+    "id": "3",
+    "title": "Fatiha",
+    "content": "Bismillah hir rahman nir raheem\nAlhamdu lillaahi Rabbil ‘aalameen\nAr-Rahmaanir-Raheem\nMaaliki Yawmid-Deen\nIyyaaka na’budu wa lyyaaka nasta’een\nIhdinas-Siraatal-Mustaqeem\nSiraatal-lazeena an’amta ‘alaihim ghayril-maghdoobi ‘alaihim wa lad-daaalleen"
+  },
+  {
+    "id": "4",
+    "title": "Ikhlas",
+    "content": "Bismillah hir rahman nir raheem\nQul huwal laahu ahad\nAllah hus-samad\nLam yalid wa lam yoolad\nWa lam yakul-lahoo kufuwan ahad"
+  },
+  {
+    "id": "5",
+    "title": "Al-Kafirun",
+    "content": "Bismillah hir rahman nir raheem\nQul yaaa-ayyuhal kaafiroon\nLaaa a’budu maa t’abudoon\nWa laaa antum ‘aabidoona maaa a’bud\nWa laaa ana ‘abidum maa ‘abattum\nWa laaa antum ‘aabidoona maaa a’bud\nLakum deenukum wa liya deen"
+  },
+  {
+    "id": "6",
+    "title": "Ayatul-Kursi",
+    "content": "Allahu laaa ilaaha illaa huwal haiyul qai-yoom\nlaa taakhuzuhoo sinatunw wa laa nawm\nlahoo maa fissamaawaati wa maa fil ard\n man zallazee yashfa’u indahooo illaa be iznih\nya’lamu maa baina aideehim wa maa khalfahum\nwa laa yuheetoona beshai ‘immin ‘ilmihee illa be maa shaaaa\nwasi’a kursiyyuhus samaa waati wal arda\n wa la ya’ooduho hifzuhumaawa huwal aliyyul ‘azeem"
+  },
+  {
+    "id": "7",
+    "title": "Ash-Sharh",
+    "content": "Bismillah hir rahman nir raheem\nAlam nashrah laka sadrak\nWa wa d’ana ‘anka wizrak\nAllazee anqada zahrak\nWa raf ‘ana laka zikrak\nFa inna ma’al usri yusra\nInna ma’al ‘usri yusra\nFa iza faragh ta fansab\nWa ilaa rabbika far ghab"
+  },
+  {
+    "id": "8",
+    "title": "Ad-Duha",
+    "content": "Bismillah hir rahman nir raheem\nWad duhaa\nWal laili iza sajaa\nMa wad da’aka rabbuka wa ma qalaa\nWalal-aakhiratu khairul laka minal-oola\nWa la sawfa y’uteeka rabbuka fatarda\nAlam ya jidka yateeman fa aawaa\nWa wa jadaka daal lan fahada\nWa wa jadaka ‘aa-ilan fa aghnaa\nFa am mal yateema fala taqhar\nWa am mas saa-ila fala tanhar\nWa amma bi ni’mati rabbika fahad dith."
+  },
+
+  {
+    "id": "9",
+    "title": "Quraysh",
+    "content": "Bismillah hir rahman nir raheem\nLi-eelaafi quraish\nEelaafihim rihlatash shitaaa’i wassaif\nFaly’abudoo rabba haazal-bait\nAllazeee at’amahum min joo’inw-wa-aamanahum min khawf."
+  },
+  {
+    "id": "10",
+    "title": "Al-Zalzalah",
+    "content": "Bismillah hir rahman nir raheem\nIzaa zul zilatil ardu zil zaalaha\nWa akh rajatil ardu athqaalaha\nWa qaalal insaanu ma laha\nYawmaa izin tuhaddithu akhbaaraha\nBi-anna rabbaka awhaa laha\nYawma iziny yas durun naasu ash tatal liyuraw a’maalahumn\nFamaiy ya’mal mithqala zarratin khai raiy-yarah\nWa maiy-y’amal mithqala zarratin sharraiy-yarah."
   }
 ]
