@@ -22,20 +22,39 @@ const sendMain = (ctx) => {
 };
 const getButtons = () => {
   var suralar = parsing();
-  return suralar.map((s) => {
-    return { text: s.title, callback_data: `sura_${s.id}` };
-  });
+  const btns = [];
+  for (let i = 0; i < suralar.length; i = i + 5) {
+    const oneLineBtn = [];
+    for (let j = i; j < i + 5; j++) {
+      if (suralar[j]) {
+        oneLineBtn.push({
+          text: suralar[j].id,
+          callback_data: `sura_${suralar[j].id}`,
+        });
+      }
+    }
+    btns.push(oneLineBtn);
+  }
+  return btns;
 };
+const ListSuralar = () => {
+  var suralar = parsing();
+  return suralar.reduce((pv, cv) => {
+    return pv + `${cv.id}. ${cv.title}\n`;
+  }, "");
+};
+
 bot
   .start((ctx) => {
+    console.log(getButtons());
     sendMain(ctx);
   })
   .action("Suralar", (ctx) => {
     if (ctx.match === "Suralar") {
-      return ctx.editMessageText(`\nSuralar bo'limi\n`, {
+      return ctx.editMessageText(`\nSuralar bo'limi\n\n${ListSuralar()}`, {
         reply_markup: {
           inline_keyboard: [
-            getButtons(),
+            ...getButtons(),
             [{ text: "Bosh sahifa", callback_data: "Bosh sahifa" }],
           ],
         },
@@ -45,10 +64,12 @@ bot
   .action("Bosh sahifa", (ctx) => {
     return sendMain(ctx);
   })
-  .action(/^sura_(\d)/, (ctx) => {
+  .action(/^sura_(\d+)/, (ctx) => {
     const suraId = ctx.match[1];
+
     let suralar = parsing();
     let sura = suralar.find((item) => item.id == suraId);
+    console.log(sura);
     if (sura) {
       ctx.editMessageText(`${sura.title} surasi \n ${sura.content}`, {
         reply_markup: {
@@ -70,4 +91,5 @@ function parsing() {
   let fileSuralar = fs.readFileSync("suralar.json", "utf-8");
   return (suralar = JSON.parse(fileSuralar));
 }
+
 bot.launch();
