@@ -46,7 +46,6 @@ const ListSuralar = () => {
 
 bot
   .start((ctx) => {
-    console.log(getButtons());
     sendMain(ctx);
   })
   .action("Suralar", (ctx) => {
@@ -66,17 +65,15 @@ bot
   })
   .action(/^sura_(\d+)/, (ctx) => {
     const suraId = ctx.match[1];
-
     let suralar = parsing();
     let sura = suralar.find((item) => item.id == suraId);
-    console.log(sura);
     if (sura) {
       ctx.editMessageText(`${sura.title} surasi \n ${sura.content}`, {
         reply_markup: {
           inline_keyboard: [
             [
-              { text: "Audio", callback_data: "Audio" },
-              { text: "Video", callback_data: "Video" },
+              { text: "Audio", callback_data: `audio_${sura.id}` },
+              { text: "Video", callback_data: `video_${sura.id}` },
               { text: "Orqaga", callback_data: "Suralar" },
             ],
           ],
@@ -85,10 +82,59 @@ bot
     } else {
       ctx.reply("Kechirasiz bizda bunday nomli sura mavjud emas.");
     }
+  })
+  .action(/^audio_(\d+)/, (ctx) => {
+    const suraId = ctx.match[1];
+    suralarAudios = parsingAudios();
+    var sura = suralarAudios.find((audio) => audio.id == suraId);
+    if (sura) {
+      return ctx.editMessageText(
+        `${sura.title} surasi \n`,
+        ctx.replyWithAudio(sura.link),
+        {
+          reply_markup: {
+            inline_keyboard: [
+              [{ text: "Orqaga", callback_data: `sura_${sura.id}` }],
+            ],
+          },
+        }
+      );
+    } else {
+      ctx.reply("Kechirasiz bizda bunday nomli sura mavjud emas.");
+    }
+  })
+  .action(/^video_(\d+)/, (ctx) => {
+    const suraId = ctx.match[1];
+    suralarVideos = parsingVideos();
+    var sura = suralarVideos.find((video) => video.id == suraId);
+    if (sura) {
+      return ctx.editMessageText(
+        `${sura.title} surasi \n`,
+        {
+          reply_markup: {
+            inline_keyboard: [
+              [{ text: "Orqaga", callback_data: `sura_${sura.id}` }],
+            ],
+          },
+        },
+        ctx.reply(sura.link)
+      );
+    } else {
+      ctx.reply("Kechirasiz bizda bunday nomli sura mavjud emas.");
+    }
   });
 
 function parsing() {
   let fileSuralar = fs.readFileSync("suralar.json", "utf-8");
+  return (suralar = JSON.parse(fileSuralar));
+}
+function parsingAudios() {
+  let fileSuralar = fs.readFileSync("suralar-audios.json", "utf-8");
+  return (suralar = JSON.parse(fileSuralar));
+}
+
+function parsingVideos() {
+  let fileSuralar = fs.readFileSync("suralar-videos.json", "utf-8");
   return (suralar = JSON.parse(fileSuralar));
 }
 
