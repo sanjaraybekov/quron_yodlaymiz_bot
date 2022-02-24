@@ -90,14 +90,14 @@ bot
     if (sura) {
       return ctx.editMessageText(
         `${sura.title} surasi \n`,
-        ctx.replyWithAudio(sura.link),
         {
           reply_markup: {
             inline_keyboard: [
               [{ text: "Orqaga", callback_data: `sura_${sura.id}` }],
             ],
           },
-        }
+        },
+        ctx.replyWithAudio(sura.link)
       );
     } else {
       ctx.reply("Kechirasiz bizda bunday nomli sura mavjud emas.");
