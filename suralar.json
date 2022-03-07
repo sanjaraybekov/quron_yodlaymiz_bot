@@ -2,52 +2,82 @@
   {
     "id": "1",
     "title": "Al-Falaq",
-    "content": "Bismillah hir rahman nir raheem\nQul a’oozu bi rabbil-falaq\nMin sharri maa khalaq\nWa min sharri ghaasiqin izaa waqab\nWa min sharrin-naffaa-saati fil ‘uqad\nWa min sharri haasidin izaa hasad"
+    "alphabet_2": "Bismillah hir rahman nir raheem\nQul a’oozu bi rabbil-falaq\nMin sharri maa khalaq\nWa min sharri ghaasiqin izaa waqab\nWa min sharrin-naffaa-saati fil ‘uqad\nWa min sharri haasidin izaa hasad",
+    "alphabet_1": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ\nمِن شَرِّ مَا خَلَقَ\nوَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ\nوَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ\nوَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+    "alphabet_3": "Бисмил-ляяхи ррахмаани ррахиим.\nКъуль а‘узу би раббиль-фаляк.\nМин шарри маа хъаляк.\nВа мин шарри гъасикын изаа вакъаб.\nВа мин шарри ннаффаасаати филь-‘укад.\nВа мин шарри хаасидин изаа хасад.    ",
+    "language_1": "(Эй Муҳаммад!) Айтинг: «Паноҳ тилаб илтижо қилурман бутун оламлар Парвардигорига.\nЯратган нарсалари ёвузлигидан.\nЗулматга чўмган тун ёвузлигидан.\nТугунчаларга дам солувчи аёллар ёвузлигидан.\nҲамда ҳасадчининг ҳасади ёвузлигидан.",
+    "language_2": "Во имя Аллаха, Милостивого, Милосердного!\nСкажи: «Прибегаю к защите Господа рассвета,\nот зла того, что Он сотворил,\nот зла мрака, когда он наступает,\nот зла колдуний, поплевывающих на узлы,\nот зла завистника, когда он завидует",
+    "language_3": "In the name of Allah, the Entirely Merciful, the Especially Merciful.\nSay, “I seek refuge in the Lord of daybreak\nFrom the evil of that which He created\nAnd from the evil of darkness when it settles\nAnd from the evil of the blowers in knots\nAnd from the evil of an envier when he envies.”",
+    "audio_link": "https://server8.mp3quran.net/afs/113.mp3",
+    "video_link": "https://youtu.be/r1VLfNuIlfI"
   },
   {
     "id": "2",
     "title": "An-Nas",
-    "content": "Bismillah hir rahman nir raheem\nQul a’oozu birabbin naas\nMalikin naas\nIlaahin naas\nMin sharril waswaasil khannaas\nAllazee yuwaswisu fee sudoorin naas\nMinal jinnati wannaas"
+    "alphabet_2": "Bismillah hir rahman nir raheem\nQul a’oozu birabbin naas\nMalikin naas\nIlaahin naas\nMin sharril waswaasil khannaas\nAllazee yuwaswisu fee sudoorin naas\nMinal jinnati wannaas",
+    "alphabet_1": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ\nمَلِكِ ٱلنَّاسِ\nإِلَـٰهِ ٱلنَّاسِ\nمِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ\nٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ\nمِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+    "alphabet_3": "Бисми-лляяhи-ррахмаани-ррахииим\nҚуль а'уузу бираббин-нааас\nМяликин-нааас\nиляяhин-нааас\nМинн-шарриль- васваасиль ханнааас\nАллязии йувасвису фии с̣удуурин-нааас\nМиналь-жин-нати-ван-нааас",
+    "language_1": "(Эй, Муҳаммад!) Айтинг: «Паноҳ тилаб илтижо қилурман одамлар Парвардигорига.\nОдамлар Подшоҳига.\nОдамлар Илоҳига.\n(инсон Аллоҳни эслаганда) чекиниб, (эсламаганда) васваса қилувчи (шайтон) ёвузлигиданки.\n(у) одамларнинг дилларига васваса солур.\n(Ўзи) жинлар ва одамлар жинсидандир».",
+    "language_2": "Во имя Аллаха, Милостивого, Милосердного!\nСкажи: «Прибегаю к защите Господа людей,\nЦаря людей,\nБога людей,\nот зла искусителя исчезающего при поминании Аллаха,\nкоторый наущает в груди людей,\nот джиннов и людей",
+    "language_3": "In the name of Allah, the Entirely Merciful, the Especially Merciful.\nSay, “I seek refuge in the Lord of mankind,\nThe Sovereign of mankind.\nThe God of mankind,\nFrom the evil of the retreating whisperer –\nWho whispers [evil] into the breasts of mankind –\nFrom among the jinn and mankind.”",
+    "audio_link": "https://server8.mp3quran.net/afs/114.mp3",
+    "video_link": "https://youtu.be/C7W_G9qmkHk"
   },
   {
     "id": "3",
     "title": "Fatiha",
-    "content": "Bismillah hir rahman nir raheem\nAlhamdu lillaahi Rabbil ‘aalameen\nAr-Rahmaanir-Raheem\nMaaliki Yawmid-Deen\nIyyaaka na’budu wa lyyaaka nasta’een\nIhdinas-Siraatal-Mustaqeem\nSiraatal-lazeena an’amta ‘alaihim ghayril-maghdoobi ‘alaihim wa lad-daaalleen"
+    "alphabet_2": "Bismillah hir rahman nir raheem\nAlhamdu lillaahi Rabbil ‘aalameen\nAr-Rahmaanir-Raheem\nMaaliki Yawmid-Deen\nIyyaaka na’budu wa lyyaaka nasta’een\nIhdinas-Siraatal-Mustaqeem\nSiraatal-lazeena an’amta ‘alaihim ghayril-maghdoobi ‘alaihim wa lad-daaalleen",
+    "audio_link": "https://server8.mp3quran.net/afs/001.mp3",
+    "video_link": "https://youtu.be/d2EBq1EFetQ"
   },
   {
     "id": "4",
     "title": "Ikhlas",
-    "content": "Bismillah hir rahman nir raheem\nQul huwal laahu ahad\nAllah hus-samad\nLam yalid wa lam yoolad\nWa lam yakul-lahoo kufuwan ahad"
+    "alphabet_2": "Bismillah hir rahman nir raheem\nQul huwal laahu ahad\nAllah hus-samad\nLam yalid wa lam yoolad\nWa lam yakul-lahoo kufuwan ahad",
+    "audio_link": "https://server8.mp3quran.net/afs/112.mp3",
+    "video_link": "https://youtu.be/mnob2oEGJf4"
   },
   {
     "id": "5",
     "title": "Al-Kafirun",
-    "content": "Bismillah hir rahman nir raheem\nQul yaaa-ayyuhal kaafiroon\nLaaa a’budu maa t’abudoon\nWa laaa antum ‘aabidoona maaa a’bud\nWa laaa ana ‘abidum maa ‘abattum\nWa laaa antum ‘aabidoona maaa a’bud\nLakum deenukum wa liya deen"
+    "alphabet_2": "Bismillah hir rahman nir raheem\nQul yaaa-ayyuhal kaafiroon\nLaaa a’budu maa t’abudoon\nWa laaa antum ‘aabidoona maaa a’bud\nWa laaa ana ‘abidum maa ‘abattum\nWa laaa antum ‘aabidoona maaa a’bud\nLakum deenukum wa liya deen",
+    "audio_link": "https://server8.mp3quran.net/afs/109.mp3",
+    "video_link": "https://youtu.be/s04ZDuOPLdg"
   },
   {
     "id": "6",
     "title": "Ayatul-Kursi",
-    "content": "Allahu laaa ilaaha illaa huwal haiyul qai-yoom\nlaa taakhuzuhoo sinatunw wa laa nawm\nlahoo maa fissamaawaati wa maa fil ard\n man zallazee yashfa’u indahooo illaa be iznih\nya’lamu maa baina aideehim wa maa khalfahum\nwa laa yuheetoona beshai ‘immin ‘ilmihee illa be maa shaaaa\nwasi’a kursiyyuhus samaa waati wal arda\n wa la ya’ooduho hifzuhumaawa huwal aliyyul ‘azeem"
+    "alphabet_2": "Allahu laaa ilaaha illaa huwal haiyul qai-yoom\nlaa taakhuzuhoo sinatunw wa laa nawm\nlahoo maa fissamaawaati wa maa fil ard\n man zallazee yashfa’u indahooo illaa be iznih\nya’lamu maa baina aideehim wa maa khalfahum\nwa laa yuheetoona beshai ‘immin ‘ilmihee illa be maa shaaaa\nwasi’a kursiyyuhus samaa waati wal arda\n wa la ya’ooduho hifzuhumaawa huwal aliyyul ‘azeem",
+    "audio_link": "https://data.ipleer.com/listen/27321952/T3duQTMycWY0Nk5FZ0NCdE1Bd3pxZXZmR3hxcTlrc1Nxa2J1d1dJSHYrckhmMFI4RVIyc3FuRHlocU9zVVNOTFZEbzA5MTY1UWlRTnVlcHVQKzJwTDljTDRIczQvU1d3MFJVbWJycHA4MkhqVHZFRUMvK1lubXJiTDdMZGl4OVA/Mishari_bin_Rashid_al-Afasi_-_Ayat_Al-Kursi_(iPleer.com).mp3",
+    "video_link": "https://youtu.be/DVmdJtr5xZ4"
   },
   {
     "id": "7",
     "title": "Ash-Sharh",
-    "content": "Bismillah hir rahman nir raheem\nAlam nashrah laka sadrak\nWa wa d’ana ‘anka wizrak\nAllazee anqada zahrak\nWa raf ‘ana laka zikrak\nFa inna ma’al usri yusra\nInna ma’al ‘usri yusra\nFa iza faragh ta fansab\nWa ilaa rabbika far ghab"
+    "alphabet_2": "Bismillah hir rahman nir raheem\nAlam nashrah laka sadrak\nWa wa d’ana ‘anka wizrak\nAllazee anqada zahrak\nWa raf ‘ana laka zikrak\nFa inna ma’al usri yusra\nInna ma’al ‘usri yusra\nFa iza faragh ta fansab\nWa ilaa rabbika far ghab",
+    "audio_link": "https://server8.mp3quran.net/afs/094.mp3",
+    "video_link": "https://youtu.be/SiiRrXf4LSU"
   },
   {
     "id": "8",
     "title": "Ad-Duha",
-    "content": "Bismillah hir rahman nir raheem\nWad duhaa\nWal laili iza sajaa\nMa wad da’aka rabbuka wa ma qalaa\nWalal-aakhiratu khairul laka minal-oola\nWa la sawfa y’uteeka rabbuka fatarda\nAlam ya jidka yateeman fa aawaa\nWa wa jadaka daal lan fahada\nWa wa jadaka ‘aa-ilan fa aghnaa\nFa am mal yateema fala taqhar\nWa am mas saa-ila fala tanhar\nWa amma bi ni’mati rabbika fahad dith."
+    "alphabet_2": "Bismillah hir rahman nir raheem\nWad duhaa\nWal laili iza sajaa\nMa wad da’aka rabbuka wa ma qalaa\nWalal-aakhiratu khairul laka minal-oola\nWa la sawfa y’uteeka rabbuka fatarda\nAlam ya jidka yateeman fa aawaa\nWa wa jadaka daal lan fahada\nWa wa jadaka ‘aa-ilan fa aghnaa\nFa am mal yateema fala taqhar\nWa am mas saa-ila fala tanhar\nWa amma bi ni’mati rabbika fahad dith.",
+    "audio_link": "https://server8.mp3quran.net/afs/093.mp3",
+    "video_link": "https://youtu.be/w_k4l-mhE1Y"
   },
 
   {
     "id": "9",
     "title": "Quraysh",
-    "content": "Bismillah hir rahman nir raheem\nLi-eelaafi quraish\nEelaafihim rihlatash shitaaa’i wassaif\nFaly’abudoo rabba haazal-bait\nAllazeee at’amahum min joo’inw-wa-aamanahum min khawf."
+    "alphabet_2": "Bismillah hir rahman nir raheem\nLi-eelaafi quraish\nEelaafihim rihlatash shitaaa’i wassaif\nFaly’abudoo rabba haazal-bait\nAllazeee at’amahum min joo’inw-wa-aamanahum min khawf.",
+    "audio_link": "https://server8.mp3quran.net/afs/106.mp3",
+    "video_link": "https://youtu.be/_gs4DcFxUzA"
   },
   {
     "id": "10",
     "title": "Al-Zalzalah",
-    "content": "Bismillah hir rahman nir raheem\nIzaa zul zilatil ardu zil zaalaha\nWa akh rajatil ardu athqaalaha\nWa qaalal insaanu ma laha\nYawmaa izin tuhaddithu akhbaaraha\nBi-anna rabbaka awhaa laha\nYawma iziny yas durun naasu ash tatal liyuraw a’maalahumn\nFamaiy ya’mal mithqala zarratin khai raiy-yarah\nWa maiy-y’amal mithqala zarratin sharraiy-yarah."
+    "alphabet_2": "Bismillah hir rahman nir raheem\nIzaa zul zilatil ardu zil zaalaha\nWa akh rajatil ardu athqaalaha\nWa qaalal insaanu ma laha\nYawmaa izin tuhaddithu akhbaaraha\nBi-anna rabbaka awhaa laha\nYawma iziny yas durun naasu ash tatal liyuraw a’maalahumn\nFamaiy ya’mal mithqala zarratin khai raiy-yarah\nWa maiy-y’amal mithqala zarratin sharraiy-yarah.",
+    "audio_link": "https://server8.mp3quran.net/afs/099.mp3",
+    "video_link": "https://youtu.be/T0BHNwskqQo"
   }
 ]
