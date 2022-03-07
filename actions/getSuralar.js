@@ -1,4 +1,4 @@
-const { getThreeButtons } = require("../methods/getThreeButtons");
+const { getFiveButtons } = require("../methods/getFiveButtons");
 const { ListSuralar } = require("../methods/getSuralarList");
 
 function getSuralar(ctx) {
@@ -6,7 +6,7 @@ function getSuralar(ctx) {
     return ctx.editMessageText(`\nSuralar bo'limi\n\n${ListSuralar()}`, {
       reply_markup: {
         inline_keyboard: [
-          ...getThreeButtons(),
+          ...getFiveButtons(),
           [{ text: "Bosh sahifa", callback_data: "Bosh sahifa" }],
         ],
       },
